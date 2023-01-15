@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+}
 body {
   font-family: "Sigmar One", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 3rem;
 }
 .header {
   height: 95vh;
@@ -33,25 +36,35 @@ background: radial-gradient(ellipse at center, #26D4EC, #C340AC); */
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 .logo {
-  height: 35px;
+  height:3.5rem;
 }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+
 .heading-primary {
   color: aliceblue;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   text-transform: uppercase;
-
+backface-visibility: hidden;
     text-shadow: 2px 2px 5px rgb(11, 10, 10);
 }
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
 
-  letter-spacing: 30px;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -59,26 +72,20 @@ background: radial-gradient(ellipse at center, #26D4EC, #C340AC); */
 }
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17.3px;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
 }
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
+
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
@@ -88,10 +95,10 @@ background: radial-gradient(ellipse at center, #26D4EC, #C340AC); */
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
@@ -101,7 +108,7 @@ background: radial-gradient(ellipse at center, #26D4EC, #C340AC); */
 @keyframes moveInBottom {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(3rem);
     }
 
     100% {
