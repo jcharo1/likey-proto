@@ -1,0 +1,23 @@
+{
+  "name": "likey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcharo1/likey-proto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcharo1/likey-proto/issues"
+  },
+  "homepage": "https://github.com/jcharo1/likey-proto#readme",
+  "dependencies": {
+
+    "node-sass": "^8.0.0"
+  }
+}
