@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jcharo1/likey-proto#readme",
   "dependencies": {
-
+    "live-server": "^1.2.2",
     "node-sass": "^8.0.0"
   }
 }
