@@ -50,6 +50,18 @@
         }
     }
 
+    &--secondary {
+        color: rgb(0, 0, 0);
+        background-blend-mode: darken;
+        background-image: url(../img/bg-textures.png);
+        background-size: cover;
+        background-color: $color-secondary-dark;
+
+        &::after {
+            background-color: $color-secondary-dark ;
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;
