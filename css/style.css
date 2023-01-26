@@ -515,16 +515,17 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  color: #f7f7f7; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
-    filter: drop-shadow(0px 10px 4px 44f99e);
-    width: 20rem; }
+    filter: drop-shadow(0px 10px 4px #b4fdd8);
+    width: 40rem; }
   .footer__navigation {
     border-top: 1px solid #f7f7f7;
-    padding: 2rem; }
+    padding-top: 2rem; }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -543,6 +544,11 @@ body {
     color: #44f99e;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
 
 .header {
   height: 95vh;
@@ -565,6 +571,61 @@ body {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%); }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  height: 7rem;
+  width: 7rem;
+  background-color: #fff;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2000; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#b4fdd8, #36c77e);
+  z-index: 1000;
+  transform: scale(120); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, orangered 0%, orangered 50%, #fff 50%);
+  background-size: 220%; }
 
 .section-about {
   background-color: #f7f7f7;
