@@ -18,18 +18,21 @@
 
 <body>
     <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-        <label for="nav-toggle" class="navigation__button">Menu</label>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"> &nbsp;</span></label>
         <div class="navigation__background">
             &nbsp;
         </div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">About Likey</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">A world of Likeys</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Likey Concepts</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"> Likey Makes Likey</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Email Likey</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Likey</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>A world of Likeys</a>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Likey Concepts</a>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link"> <span>04</span>Likey Makes Likey</a>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Email Likey</a></li>
             </ul>
         </nav>
     </div>
@@ -168,7 +171,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">1 Likey</p>
-                                    <a href="#" class="btn btn--white">Buy Now!</a>
+                                    <a href="#popup" class="btn btn--white">Buy Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +204,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">1 Likey</p>
-                                    <a href="#" class="btn btn--white">Buy Now!</a>
+                                    <a href="#popup" class="btn btn--white">Buy Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +237,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">1 Likey</p>
-                                    <a href="#" class="btn btn--white">Buy Now!</a>
+                                    <a href="#popup" class="btn btn--white">Buy Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -384,6 +387,25 @@
         </div>
 
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/mall.png" alt="cartoon image of mall" class="popup__img">
+                <img src="img/3d-room.png" alt="cartoon image room" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Like Likey now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please Like Likey</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ullam ratione earum expedita at
+                    officiis? Vitae ea nemo officiis recusandae sint similique doloribus quasi id reiciendis tenetur?
+                    Reiciendis, totam eaque.
+                </p>
+                <a href="#" class="btn btn--tertiary">Likey Now</a>
+            </div>
+        </div>
+    </div>
     <!--- <section class="grid-test">
         <div class="row">
             <div class="col-1-of-2"> Col 1 of 2</div>
