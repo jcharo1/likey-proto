@@ -3,7 +3,8 @@
 
     background: $color-primary-light;
 
-    background-image: url(../img/room.png);
+    background-image: linear-gradient(rgba($color-primary-light, .85),
+            rgba($color-primary-dark, .85)), url(../img/preview.png);
 
     background-size: cover;
     background-position: top;
