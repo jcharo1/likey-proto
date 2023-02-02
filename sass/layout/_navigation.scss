@@ -23,6 +23,16 @@
         text-align: center;
         cursor: pointer;
 
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
+
 
     }
 
@@ -35,6 +45,10 @@
         filter: drop-shadow(1px 2px 1px rgba($color-black, .1));
         transition: all 2s;
         transform: translate(-11%, -25%) rotate(0);
+
+        @include respond(phone) {
+            transform: translate(-8%, -25%) rotate(0);
+        }
     }
 
     &__background {
@@ -50,6 +64,18 @@
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
         transform: translateX(-25%);
         z-index: 1000;
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
+
+
 
         // transform: scale(120);
     }

@@ -37,6 +37,7 @@
         color: rgb(0, 0, 0);
         background-image: url(../img/bg-textures.png);
         background-size: cover;
+        background-position: center;
         background-color: $color-white;
 
         &::after {
