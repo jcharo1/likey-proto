@@ -46,3 +46,8 @@ body {
     }
 
 }
+
+::selection {
+    background-color: $color-pink-light;
+    color: $color-white;
+}
